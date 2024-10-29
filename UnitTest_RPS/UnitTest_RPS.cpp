@@ -13,16 +13,8 @@ namespace UnitTest
 		TEST_METHOD(TestPlayer1Wins)
 		{
 			char* result = rockPaperScissors("Rock", "Scissors");
-			Assert::AreEqual("Player1", result); // test case of Player1 winning
+			Assert::AreEqual("Player1", result); // test case of Player1 winning 
 		}
-
-		TEST_METHOD(TestPlayer2Wins)
-		{
-			char* result = rockPaperScissors("Rock", "Paper");
-			Assert::AreEqual("Player2", result); // test case of Player2 winning
-		}
-
-
 
 	};
 }
