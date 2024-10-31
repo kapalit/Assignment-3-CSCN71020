@@ -28,6 +28,11 @@ namespace UnitTest
 			Assert::AreEqual("Draw", result); // This should end in a draw
 		}
 
+		TEST_METHOD(TestInvalidInput)
+		{
+			char* result = rockPaperScissors("Rock", "InvalidInput");
+			Assert::AreEqual("Invalid", result); // This should return Invalid
+		}
 
 	};
 }
